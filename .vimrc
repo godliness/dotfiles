@@ -1,7 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
-set relativenumber
+set rnu
+set nu
 set maxmempattern=3000
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
