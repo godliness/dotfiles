@@ -18,10 +18,7 @@ Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'sebdah/vim-delve'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'Shougo/vimproc.vim' 
+Plugin 'Valloric/YouCompleteMe' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,6 +61,3 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Python
 let g:pymode = 0
 " Python
-" VimShell
-let g:loaded_vimshell = 1
-" VimShell
