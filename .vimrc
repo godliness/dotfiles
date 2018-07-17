@@ -10,6 +10,8 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 " call vundle#begin('~/some/path/here')
 
+highlight Pmenu ctermfg=15 ctermbg=4 guifg=#ffffff guibg=#000000
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
@@ -17,6 +19,9 @@ Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'sebdah/vim-delve'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'Shougo/vimproc.vim' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,3 +64,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Python
 let g:pymode = 0
 " Python
+" VimShell
+let g:loaded_vimshell = 1
+" VimShell
