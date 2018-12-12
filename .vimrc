@@ -4,7 +4,7 @@ filetype off                  " required
 syntax on
 set rnu
 set nu
-set maxmempattern=3000
+set maxmempattern=4000
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -19,7 +19,7 @@ Plugin 'fatih/vim-go'
 Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe' 
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,6 +45,9 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_autosave = 1
+let g:go_test_timeout= '300s'
 " Go
 "
 " NerdTree
