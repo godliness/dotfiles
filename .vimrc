@@ -5,6 +5,7 @@ syntax on
 set rnu
 set nu
 set maxmempattern=4000
+set paste
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
