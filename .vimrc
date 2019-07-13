@@ -13,7 +13,7 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 " call vundle#begin('~/some/path/here')
 
-highlight Pmenu ctermfg=15 ctermbg=4 guifg=#ffffff guibg=#000000
+" highlight Pmenu ctermfg=15 ctermbg=4 guifg=#ffffff guibg=#000000
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -22,6 +22,8 @@ Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,8 +52,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 let g:go_test_timeout= '300s'
+let g:go_metalinter_deadline = "100s"
 " Go
-"
 " NerdTree
 map <F7> :NERDTreeToggle<CR>
 " NerdTree
@@ -67,3 +69,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Python
 let g:pymode = 0
 " Python
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+" CtrlP
