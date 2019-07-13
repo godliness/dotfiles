@@ -22,8 +22,10 @@ Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,3 +74,8 @@ let g:pymode = 0
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 " CtrlP
+" AirLine
+let g:airline_powerline_fonts = 1
+let g:airline_theme='simple'
+let g:airline_extensions = ['branch', 'tabline']
+" AirLine
